@@ -1,0 +1,71 @@
+<div class="container card text-left shadow-sm p-3 mb-3 bg-white rounded"> <!-- start supplier card section -->
+    <div class="row"> <!-- start supplier card description section -->
+      <div class="col-sm-5">
+        <div> 
+          <p data-cy="supplier-title" class="section-p-title"> 
+            Supplier
+          </p>
+        </div>
+        <div>
+          <p data-cy="supplier-name" class="section-p-desc">
+            {{supplier?.name}} 
+          </p>
+          <p data-cy="supplier-code" class="section-p-id">
+            Code #{{supplier?.code}}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4 pr-0">
+        <div>
+          <p data-cy="supplier-document-value" class="font-section-p">
+            {{supplier?.document?.type}} - {{supplier?.document?.value}}
+          </p>
+          <p data-cy="supplier-address" class="font-section-p">
+            {{supplier?.address}}
+          </p>
+        </div>
+      </div>
+
+      <div class="col-sm-5"><!-- start supplier card contact description section -->
+        <div>
+          <img data-cy="supplier-icon-user" src="../assets/user.svg" alt="user" width="18px" height="14px">
+          <p data-cy="supplier-contact-name" class="font-section-p">
+            {{supplier?.contact?.name}} -
+          </p>
+          <a data-cy="supplier-document-email" class="font-section-a" href=""> {{supplier?.contact?.email}}</a>
+          <div>
+            <img data-cy="supplier-icon-phone" src="../assets/phone.svg" alt="phone" width="18px" height="14px">
+            <p data-cy="supplier-contact-phone" class="font-section-p">
+              {{supplier?.contact?.phone}}
+            </p>
+            <p class="separador">
+              -
+            </p>
+            <img data-cy="supplier-icon-fax" src="../assets/fax.svg" alt="fax" width="18px" height="14px">
+            <p data-cy="supplier-contact-fax" class="font-section-p">
+              {{supplier?.contact?.fax}}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3"><!-- start supplier card time description section -->
+        <div>
+          <img data-cy="supplier-icon-eye" src="../assets/eye.svg" alt="eye" width="18px" height="14px">
+          <p data-cy="supplier-readat" class="font-section-p">
+            Read: {{supplier?.readAt | date:"dd/MM/yyyy"}}
+          </p>
+        </div>
+        <div>
+          <img data-cy="supplier-icon-reply" src="../assets/backarrow.svg" alt="backarrow" width="18px" height="14px">
+          <p data-cy="supplier-last-replyat" class="font-section-p">
+            Last Reply: {{supplier?.lastReplyAt | date:"dd/MM/yyyy"}}
+          </p>
+        </div>
+      </div><!-- finish supplier card time description section -->
+
+    </div><!-- finish supplier card contact description section -->
+  </div> <!-- Finish supplier card section -->

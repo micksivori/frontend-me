@@ -1,0 +1,67 @@
+<header class="header">
+    <div class="row py-3">
+      <div class="col-12 col-md-4 col-lg-3 mr-0 p-0">
+        <div data-cy=header-wrapper class="purchase-header"> <!-- start Order case blue backgroung -->
+          <div class="d-flex flex-column">
+            <p data-cy="header-purchase-order" class="font-header-h3"> 
+              Purchase Order
+            </p>
+            <p data-cy="header-purchase-number" class="font-header-h2">
+              {{header?.number}}
+            </p>
+            <p data-cy="header-serial-number" class="font-header-p-serial">
+              SerialME {{header?.serial}}
+            </p>
+          </div>
+        </div> 
+        <!-- <div data-cy="header-logo-me" class="logo-me">
+          <img src="../src/assets/favicon.png" alt="" />
+        </div> -->
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-6 pl-4"> <!-- start Order buyer case -->
+        <div class="d-flex flex-column align-items-sm-start align-items-left">
+          <h1 data-cy="header-buyer" class="text-xxxl fw-600 mb-2"> 
+            {{header?.buyer}}
+          </h1>
+          <div class="d-flex mb-1">
+            <p data-cy="header-contact-name" class="d-flex align-items-left m-0">
+              <img data-cy="header-icon-users" class="mr-1" src="../assets/persons.svg" alt="Persons" width="18px" height="14px">
+              {{header?.contact?.name}}
+            </p>
+            <a data-cy="header-icon-info-circle" class="d-flex align-items-center ml-1" href="#info" alt="info">
+              <img src="../assets/info.svg" alt="info" width="18px" height="14px">
+            </a>
+          </div>
+
+        </div>
+        <div class="d-flex flex-wrap mb-1">
+          <p data-cy="header-contact-email" class="d-flex align-items-center mr-2 my-0">
+            <img data-cy="header-icon-email" class="mr-1" src="../assets/email.svg" alt="email" width="18px" height="14px">
+            {{header?.contact?.email}}
+          </p>
+          <p data-cy="header-contact-phone" class="d-flex align-items-center mr-3 my-0">
+            <img data-cy="header-icon-phone" class="mr-1" src="../assets/phone.svg" alt="phone" width="18px" height="14px">
+            {{header?.contact?.phone}}
+            <img data-cy="header-icon-fax" class="ml-2 mr-1" src="../assets/fax.svg" alt="fax" width="18px" height="14px">
+            {{header?.contact?.fax}}
+          </p>
+        </div>
+      </div> <!-- finish Order buyer case -->
+
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3"> <!-- start Order Price case -->
+        <div className="d-flex flex-column align-items-sm-end align-items-center pr-0 pr-sm-3">
+          <h1 data-cy="header-price" class="text-xxxl fw-600 text-right mb-2"> 
+            {{header?.currency}} {{header?.price}}
+          </h1>
+          <p data-cy="header-status" class="mb-3 font-header-alert">
+            {{header?.status}}
+          </p>
+          <p data-cy="header-createdat" class="text-sm text-right">
+            Created on {{header?.createdAt | date:"dd/MM/yyyy"}}
+          </p>
+        </div>
+      </div> <!-- Finish Order Price case -->
+
+    </div>
+  </header>

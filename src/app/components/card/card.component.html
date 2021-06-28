@@ -1,0 +1,49 @@
+<div class="--fixed shadow-sm rounded">
+  <div class="container m-1">
+
+    <div class="d-flex mb-2">
+      <p data-cy="address-label" class="card-p-order m-0">
+        {{ address?.label }}
+      </p>
+    </div>
+
+    <div class="d-flex mb-2">
+      <p data-cy="address-name" class="card-p-title m-0">
+        {{ address?.name }} - <span data-cy="address-code" class="card-code"> {{ address?.code }}</span>
+      </p>
+    </div>
+
+    <div class="d-flex mb-1">
+      <span data-cy="address-address" class="card-img-span">
+        <img data-cy="address-icon-map-marker" class="mr-1" src="../assets/locationpin.svg" alt="locationpin" width="18px" height="14px">
+        {{ address?.address }}
+      </span>
+    </div>
+
+    <div class="d-flex mb-1">
+      <span data-cy="address-contact-name" class="card-img-span">
+        <img data-cy="address-icon-user" class="mr-1" src="../assets/user.svg" alt="user" width="18px" height="14px">
+        {{ address?.contact?.name }}
+      </span>
+    </div>
+
+    <div class="d-flex mb-1">
+      <span data-cy="address-contact-email" class="card-img-span">
+        <img data-cy="address-icon-email" class="mr-1" src="../assets/email.svg" alt="mail" width="18px" height="14px">
+        {{ address?.contact?.email }}
+      </span>
+    </div>
+
+    <div class="d-flex mb-1">
+      <p data-cy="address-contact-phone" class="d-flex align-items-center mr-3 my-0">
+        <img data-cy="address-icon-phone" class="mr-1" src="../assets/phone.svg" alt="phone" width="18px" height="14px">
+        {{ address?.contact?.phone }}
+      </p>
+      <p data-cy="address-contact-fax" class="d-flex align-items-center my-0">
+        <img data-cy="address-icon-fax" class="mr-1" src="../assets/fax.svg" alt="fax" width="18px" height="14px">
+        {{ address?.contact?.fax }}
+      </p>
+    </div>
+  </div>
+
+</div>

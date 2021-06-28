@@ -1,1 +1,168 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background-color: RGBA(0, 0, 0, 0.5) !important;
+    margin: 0 auto;
+}
+
+a {
+    cursor: pointer;
+}
+/* ------------logo------------------ */
+.logo-me {
+    background-image: url(../src/assets/favicon.png);
+    background-position: center;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 70px;
+    margin: -28.5% 83%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 2px solid RGB(0, 66, 110);
+}
+/* ------------------ */
+.header {
+    margin-top: 0;
+}
+.purchase-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #0A8CCC;
+    color: white;
+    padding: 0 1.375rem;
+    border-radius: 0 10px 10px 0;
+}
+
+.font-header-h1 {
+    font-size: 24px;
+    color: #000000;
+}
+
+
+.font-header-h2 {
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.font-header-h3 {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+.font-header-h1-price {
+    text-align: right;
+}
+
+p {
+    font-size: 12px;
+}
+
+.font-header-p-serial {
+    color: #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.font-header-p-price {
+    color: #000000;
+    text-align: right;
+}
+
+.font-header-alert {
+    font-size: 17px;
+    color: #F5A623;
+    text-align: right;
+    font-weight: 600;
+}
+/* ------------------header ends------------------------ */
+/* --------sections------------ */
+.section-p-title {
+    color: #919191;
+    font-weight: 600;
+}
+.section-p-desc {
+    font-size: 15px;
+    color: #0A8CCC;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.section-p-id {
+    margin-left: 10px;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #0A8CCC;
+    font-weight: 700;
+    display: inline-block;
+    color: RGB(138, 138, 138);
+    background-color: rgba(10, 140, 204, 0.12);
+    border-radius: 1.25rem;
+}
+.font-section-p {
+    padding-left: 5px;
+    color: #000000;
+    display: inline-block;
+    margin: 0;
+}
+
+.font-section-a {
+    font-size: 12px;
+    color: RGB(10, 140, 204);
+}
+
+.separador {
+    margin: 0 4px 0 5px;
+    display: inline-block;
+}
+
+.collapse-img {
+    padding: 5px;
+    width: 20px; 
+    height: 22px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(10, 140, 204, 0.12);
+    border-radius: 1rem;
+}
+
+.arrow:not(.collapsed) {
+    transform: rotateX(180deg);
+}
+
+/* -----------card---------------- */
+
+.card-p-order {
+    color: #919191;
+    font-weight: 600;
+}
+
+.card-p-title {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.76);
+    font-weight: 700;
+}
+
+.card-code {
+    font-size: 14px;
+    color: rgba(82, 82, 82, 0.48);
+    font-weight: 700;
+}
+
+.card-img-span {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+}
+
+.card-flex{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-gap: 16px;
+}
+
+.--fixed{
+    height: 160px;
+}
