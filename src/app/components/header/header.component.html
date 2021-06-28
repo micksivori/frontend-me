@@ -14,9 +14,6 @@
             </p>
           </div>
         </div> 
-        <!-- <div data-cy="header-logo-me" class="logo-me">
-          <img src="../src/assets/favicon.png" alt="" />
-        </div> -->
       </div>
 
       <div class="col-12 col-sm-6 col-md-4 col-lg-6 pl-4"> <!-- start Order buyer case -->
@@ -44,7 +41,9 @@
             <img data-cy="header-icon-phone" class="mr-1" src="../assets/phone.svg" alt="phone" width="18px" height="14px">
             {{header?.contact?.phone}}
             <img data-cy="header-icon-fax" class="ml-2 mr-1" src="../assets/fax.svg" alt="fax" width="18px" height="14px">
-            {{header?.contact?.fax}}
+            <span data-cy="header-contact-fax">
+              {{header?.contact?.fax}}
+            </span>
           </p>
         </div>
       </div> <!-- finish Order buyer case -->

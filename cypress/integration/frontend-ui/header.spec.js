@@ -8,7 +8,6 @@ describe("Header component validation", () => {
       cy.get("[data-cy=header-purchase-order]").should("to.have.length", 1);
       cy.get("[data-cy=header-purchase-number]").should("to.have.length",1);
       cy.get("[data-cy=header-serial-number]").should("to.have.length", 1);
-      cy.get("[data-cy=header-logo-me]").should("to.have.length", 1);
       cy.get("[data-cy=header-buyer]").should("to.have.length", 1);
       cy.get("[data-cy=header-contact-name]").should("to.have.length", 1);
       cy.get("[data-cy=header-icon-users]").should("to.have.length", 1);
